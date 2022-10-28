@@ -6,7 +6,7 @@
 /*   By: gpimenta <gpimenta@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:16:59 by gpimenta          #+#    #+#             */
-/*   Updated: 2022/10/28 17:51:02 by gpimenta         ###   ########.fr       */
+/*   Updated: 2022/10/28 20:57:21 by gpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,5 @@ int	ft_printf(const char *str, ...)
 /*
 int	main()
 {
-	int	i = 0;
-	printf(", %d", ft_printf("%s%X %d %p%t%s", "gaspar", 590, 123, &i, ""));
+	printf(", %d", ft_printf("%p %p", 0, 0));
 }*/

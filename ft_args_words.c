@@ -6,7 +6,7 @@
 /*   By: gpimenta <gpimenta@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 16:55:51 by gpimenta          #+#    #+#             */
-/*   Updated: 2022/10/28 17:56:22 by gpimenta         ###   ########.fr       */
+/*   Updated: 2022/10/28 21:03:10 by gpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,13 +73,14 @@ void	ft_put_p_arg(unsigned long p, int *l)
 
 	i = 0;
 	hex = "0123456789abcdef";
-	write (1, "0x", 2);
-	(*l) += 2;
 	if (p == 0)
 	{
-		write (1, "0", 1);
-		(*l)++;
+		write (1, "(nil)", 5);
+		(*l) += 5;
+		return ;
 	}
+	write (1, "0x", 2);
+	(*l) += 2;
 	while (p > 0)
 	{
 		str[i] = hex[p % 16];
